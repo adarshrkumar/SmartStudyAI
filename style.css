@@ -1,0 +1,479 @@
+/* General Styles */
+body {
+    font-family: sans-serif; /* Choose a suitable font */
+    margin: 0;
+    background-color: #fff9f9; /* Light pinkish background */
+    color: #150e41; /* Dark blue text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 754px; /* Max width from SVG */
+    min-height: 566px; /* Min height from SVG */
+    background-color: #fff9f9;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* For footer positioning */
+    border: 1px solid #eee; /* Optional: to visualize container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    color: #150e41;
+  }
+  
+  /* Header */
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .app-header h2 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .back-button {
+    color: #150e41;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .feedback-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feedback-button button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-bottom: 2px;
+  }
+  
+  .feedback-button span {
+    font-size: 0.7em;
+    color: #555;
+  }
+  
+  /* Footer */
+  .app-footer {
+    margin-top: auto; /* Pushes footer to bottom */
+    padding-top: 20px;
+    text-align: left;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+    background-color: #d9d9d9; /* Default grey */
+    color: #150e41;
+  }
+  
+  .btn-primary {
+    background-color: #6cbf6b; /* Green */
+    color: white;
+  }
+  
+  .btn-secondary {
+    background-color: #d9d9d9; /* Grey */
+    color: #150e41;
+  }
+  
+  .btn-tertiary {
+    background-color: #d9d9d9; /* Grey */
+    color: #150e41;
+  }
+  
+  .btn-login {
+    background-color: #6c8eef; /* Blue */
+    color: white;
+    width: 100%;
+    max-width: 200px;
+    margin: 15px auto 0;
+    display: block;
+  }
+  
+  .btn-create {
+    background-color: #6cbf6b; /* Green */
+    color: white;
+    width: 100%;
+    max-width: 200px;
+    margin: 15px auto 0;
+    display: block;
+  }
+  
+  .btn-premium {
+    background-color: #ffd700; /* Yellow/Gold */
+    color: #150e41;
+    padding: 8px 15px;
+  }
+  
+  .upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background-color: #f0f0f0;
+    border: 1px dashed #aaa;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #555;
+    font-size: 1em;
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  .upload-icon {
+    margin-left: 10px;
+    font-size: 1.5em;
+    line-height: 1;
+  }
+  
+  .send-button {
+    padding: 10px 15px;
+    background-color: #6c8eef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  /* Welcome Screen */
+  .welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .mascot-area {
+    margin: 20px 0;
+    /* Add styles for mascot image/svg */
+  }
+  
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .action-buttons .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Feature Selection */
+  .feature-selection-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 50px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .feature-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    border: 2px solid #150e41;
+    border-radius: 50%;
+    background-color: #fff9f9;
+    color: #150e41;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    position: relative; /* For arrows */
+  }
+  
+  .feature-option:hover {
+    background-color: #150e41;
+    color: #fff9f9;
+  }
+  
+  /* Add arrows using pseudo-elements (example for top arrow) */
+  .feature-option.chat-option::before {
+    content: "↓";
+    position: absolute;
+    top: -25px;
+    font-size: 1.5em;
+    color: #150e41;
+  }
+  /* Add similar ::before or ::after for other arrows */
+  
+  /* Chat & Language Interfaces */
+  .chat-interface,
+  .language-interface {
+    display: flex;
+    flex-direction: column;
+    height: calc(
+      100% - 100px
+    ); /* Adjust based on header/footer height */
+    flex-grow: 1;
+  }
+  
+  .message-display-area {
+    flex-grow: 1;
+    border: 1px solid #eee;
+    background-color: #f0f0f0; /* Light grey display area */
+    margin-bottom: 15px;
+    padding: 15px;
+    overflow-y: auto;
+    border-radius: 8px;
+  }
+  
+  .message {
+    padding: 8px 12px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-width: 70%;
+  }
+  
+  .bot-message {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+  }
+  
+  .user-message {
+    background-color: #d1e7dd; /* Example user message color */
+    align-self: flex-end;
+    margin-left: auto;
+    border-bottom-right-radius: 0;
+  }
+  
+  .message-input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    border: 1px solid #eee;
+  }
+  
+  .message-input-area input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Tutor, Solver, Explainer Interfaces */
+  .tutor-interface,
+  .solver-interface,
+  .explainer-interface {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-options {
+    background-color: #f0f0f0; /* Grey background box */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+  }
+  
+  .input-options textarea,
+  .input-options input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    min-height: 80px;
+  }
+  
+  .option-divider {
+    display: block;
+    margin: 15px 0;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  /* Grammar Interface */
+  .grammar-interface {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grammar-input-area {
+    flex-grow: 1;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+  
+  .suggestion-area {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .suggestion-area h3 {
+    margin-top: 0;
+    text-align: left;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  .suggestion-count {
+    background-color: #aaa;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
+  
+  .suggestion-categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .suggestion-category {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #150e41;
+    border-bottom: 3px solid transparent; /* For active state */
+    position: relative;
+  }
+  .suggestion-category::before {
+    /* Placeholder for the colored lines */
+    content: "";
+    position: absolute;
+    bottom: -1px; /* Adjust to align with border */
+    left: 10%;
+    width: 80%;
+    height: 3px;
+  }
+  .suggestion-category.correctness::before {
+    background-color: red;
+  }
+  .suggestion-category.clarity::before {
+    background-color: blue;
+  }
+  .suggestion-category.engagement::before {
+    background-color: green;
+  }
+  .suggestion-category.delivery::before {
+    background-color: purple;
+  }
+  
+  /* Login & Register Screens */
+  .login-content,
+  .register-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form,
+  .register-form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #eee;
+  }
+  
+  .login-form h2,
+  .register-form h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .form-group input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+  
+  /* Screen Reader Only class */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
