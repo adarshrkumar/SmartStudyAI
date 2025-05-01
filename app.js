@@ -159,5 +159,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     // --- Tutor/Solver/Explainer Upload Buttons ---
-    const 
+    const uploadButtons = document.querySelectorAll(".upload-button");
+    uploadButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        console.log("Upload button clicked");
+        alert("Upload functionality not implemented.");
+      });
+    });
+  
+    // --- Grammar Interface ---
+    const grammarTextArea = document.querySelector(".grammar-input-area");
+    const suggestionCategories = document.querySelectorAll(
+      ".suggestion-category",
+    );
+  
+    if (grammarTextArea) {
+      grammarTextArea.addEventListener("input", () => {
+        console.log("Grammar text changed:", grammarTextArea.value);
+      });
+    }
+  
+    suggestionCategories.forEach((button) => {
+      button.addEventListener("click", () => {
+        const category = button.textContent;
+        console.log(`Suggestion category selected: ${category}`);
+        alert(`Filtering by ${category} not implemented.`);
+      });
+    });
+  });
   
