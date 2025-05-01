@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grammar - SmartStudyAI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container grammar-container">
+      <header class="app-header">
+        <a href="features.html" class="back-button">← Back to page</a>
+        <h2>SMARTSTUDYAI Grammar</h2>
+        <div class="feedback-button">
+          <button type="button" aria-label="Feedback">😊</button>
+          <span>Feedback</span>
+        </div>
+      </header>
+
+      <main class="grammar-interface">
+        <textarea
+          placeholder="Type or Copy/Paste your texts here..."
+          aria-label="Text input for grammar check"
+          class="grammar-input-area"
+        ></textarea>
+        <div class="suggestion-area">
+          <h3>Review suggestions <span class="suggestion-count">6</span></h3>
+          <div class="suggestion-categories">
+            <button class="suggestion-category correctness">Correctness</button>
+            <button class="suggestion-category clarity">Clarity</button>
+            <button class="suggestion-category engagement">Engagement</button>
+            <button class="suggestion-category delivery">Delivery</button>
+          </div>
+          <!-- Suggestions would be dynamically loaded here -->
+        </div>
+      </main>
+
+      <footer class="app-footer">
+        <a href="#" class="btn btn-premium">Get Premium</a>
+      </footer>
+    </div>
+  </body>
+</html>

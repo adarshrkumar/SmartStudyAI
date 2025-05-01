@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account - SmartStudyAI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container register-container">
+      <header class="app-header">
+        <a href="index.html" class="back-button">← Back to page</a>
+        <div class="feedback-button">
+          <button type="button" aria-label="Feedback">😊</button>
+          <span>Feedback</span>
+        </div>
+      </header>
+
+      <main class="register-content">
+        <h2>WELCOME TO SMARTSTUDYAI</h2>
+        <form class="register-form">
+          <div class="form-group">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" id="name" placeholder="Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <label for="reg-password" class="sr-only">Password</label>
+            <input
+              type="password"
+              id="reg-password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-create">Create Account</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

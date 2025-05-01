@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - SmartStudyAI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container login-container">
+      <header class="app-header">
+        <a href="index.html" class="back-button">← Back to page</a>
+        <div class="feedback-button">
+          <button type="button" aria-label="Feedback">😊</button>
+          <span>Feedback</span>
+        </div>
+      </header>
+
+      <main class="login-content">
+        <h2>WELCOME TO SMARTSTUDYAI</h2>
+        <form class="login-form">
+          <div class="form-group">
+            <label for="username" class="sr-only">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password" class="sr-only">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-login">Login</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
